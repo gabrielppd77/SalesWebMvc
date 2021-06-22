@@ -12,6 +12,7 @@ namespace SalesWebMvc.Models
         public DateTime BirthDate { get; set; }
         public Double BaseSalary { get; set; }
         public Department Department { get; set; }
+        public int DepartmentId { get; set; } //Setando o ID do Departamento para o Entity entender que o Deparment de Um Seller não pode ser null
         public ICollection<SalesRecord> Sales { get; set; } = new List<SalesRecord>();
 
         public Seller()
