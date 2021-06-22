@@ -8,7 +8,6 @@ namespace SalesWebMvc.Models
     {
         public int Id { get; set; }
 
-        [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}")]
         public DateTime Date { get; set; }
 
